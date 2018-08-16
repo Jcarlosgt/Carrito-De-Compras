@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header-shop">
+        <div class="contenedor">
+            <nav class="nav-shop">
+                <div class="btn_cerrar">
+                    <i class="icon far fa-user" for="btn-init"></i>
+                    <a id="btn-cerrar" href="index.html">Cerrar Sesion</a>
+                </div>
+                <div class="btn_producto">
+                    <i class="icon fas fa-parachute-box"></i>
+                    <a href="store.html">Productos</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main-pay">
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>Carrito
+                    <i class="fas fa-shopping-cart"></i>
+                </h1>
+            </div>
+            <div class="contenido-pay" id="contenido">
+            </div>
+            <div class="buttons">
+                <div class="btn_actualizar">
+                    <i class="icon fas fa-sync-alt" for="btn-init"></i>
+                    <a onclick="actualizar()" id="btn-confirmar" href="pay.html">Actualizar</a>
+                </div>
+                <div class="btn_confirmar">
+                    <i class="icon far fa-check-circle" for="btn-init"></i>
+                    <a onclick="confirmar()" id="btn-confirmar" href="store.html">Confirmar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>GAMER SHOP
+                    <i class="fas fa-gamepad"></i>
+                </h1>
+            </div>
+        </div>
+    </footer>
+    <script src="js/listar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,653 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 20px;
+    }
+    /*======================== Estilos Modal ======================== */
+    
+    .modal-acerca {
+        display: none;
+        background: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .modal-acerca .content-modal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 900px;
+        height: 450px;
+        margin: auto;
+        background: #fff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .modal-acerca .content-modal .cerrar {
+        text-align: right;
+        color: #00EEFF;
+        cursor: pointer;
+    }
+    
+    .modal-acerca .content-modal .titulo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .modal-acerca .content-modal .texto {
+        text-align: justify;
+        width: 70%;
+        align-self: center;
+    }
+    /*================================================================= */
+    
+    header {
+        width: 100%;
+        background: #221E22;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+    
+    .contenedor,
+    footer .contenedor {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .menu_bar {
+        display: none;
+    }
+    
+    .navegacion {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #221E22;
+        z-index: 999;
+    }
+    
+    .navegacion,
+    .contenido {
+        width: 100%;
+        display: flex;
+        padding-left: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navegacion .enlaces a,
+    .navegacion .btn_inicio a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    .navegacion .enlaces a:hover {
+        color: #00EEFF;
+    }
+    
+    .navegacion .btn_inicio .icon {
+        padding: 10px;
+        background: #00EEFF;
+        color: #fff;
+        border-radius: 5px 0px 0px 5px;
+        margin-right: 2px;
+    }
+    
+    .navegacion .btn_inicio a {
+        padding: 6.5px;
+        background: #707070;
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .header-shop {
+        width: 100%;
+        padding: 40px;
+    }
+    
+    .nav-shop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav-shop .btn_carrito a,
+    .nav-shop .btn_cerrar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    .nav-shop .btn_cerrar .icon {
+        padding: 10px;
+        background: #00EEFF;
+        color: #fff;
+        border-radius: 5px 0px 0px 5px;
+        margin-right: -1.5px;
+    }
+    
+    .nav-shop .btn_carrito .icon {
+        border-radius: 5px;
+    }
+    
+    .nav-shop .btn_carrito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #424B54;
+        width: 50px;
+        height: 50px;
+        padding: 30px;
+        border-radius: 100%;
+        position: fixed;
+        right: 10%;
+        bottom: 5%;
+        z-index: 9999;
+    }
+    
+    .nav-shop .btn_carrito .icon {
+        font-size: 1.5em;
+        color: #fff;
+        margin-left: 15px;
+    }
+    
+    .over {
+        transform: scale(3, 3);
+    }
+    
+    .nav-shop .btn_carrito .items {
+        display: none;
+        width: 30px;
+        border-radius: 50%;
+        background: red;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .nav-shop .btn_cerrar a {
+        padding: 6.5px;
+        background: #707070;
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .contenido {
+        height: 630px;
+    }
+    
+    .contenido .titulo,
+    footer .titulo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+    }
+    
+    .contenido .titulo h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contenido .titulo i,
+    footer .titulo i {
+        font-size: 1.5em;
+        transform: rotate(-10deg);
+    }
+    /* ================== PRODUCTOS ====================== */
+    
+    .main {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .main .contenedor {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .main .titulo {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .main .titulo i {
+        font-size: 1.5em;
+        transform: rotate(10deg);
+    }
+    
+    .main .contenedor .productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .main .productos .producto {
+        width: 30%;
+        padding: 20px;
+        border: 2px solid #c2c2c2;
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 20px;
+        cursor: move;
+    }
+    
+    .main .productos .producto:hover {
+        transform: scale(1.05, 1.05);
+    }
+    
+    .main .productos .producto img {
+        width: 100%;
+    }
+    
+    .main .productos .producto .name {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main .productos .producto .name h5 {
+        margin-bottom: 15px;
+    }
+    
+    .main .productos .producto .name h4 {
+        color: #00EEFF;
+        margin-bottom: 60px;
+    }
+    
+    .main .productos .producto .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background: #424B54;
+        padding: 15px;
+        border-radius: 0px 0px 5px 5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .main .productos .producto .btn_cantidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background: #424B54;
+        padding: 15px;
+        border-radius: 0px 0px 5px 5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .main .productos .producto .btn_cantidad input[type="text"] {
+        width: 30%;
+        padding: 5px;
+        border: none;
+        text-align: center;
+    }
+    
+    .main .productos .producto .button .menos,
+    .main .productos .producto .button .mas {
+        display: flex;
+        width: 50%;
+    }
+    
+    .main .productos .producto .button .menos button,
+    .main .productos .producto .button .mas button,
+    .main .productos .producto .btn_cantidad .btn_down,
+    .main .productos .producto .btn_cantidad .btn_up {
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 5px 0px 0px 5px;
+        margin-right: 2px;
+        background: #00EEFF;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .main .productos .producto .btn_cantidad .btn_up {
+        border-radius: 0px 5px 5px 0px;
+        margin-left: 2px;
+    }
+    
+    .main .productos .producto .button .mas {
+        justify-content: flex-end;
+    }
+    
+    .main .productos .producto .button .menos input[type="text"],
+    .main .productos .producto .button .mas input[type="text"] {
+        width: 30%;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        text-align: center;
+    }
+    /* ================= ESTILOS PAY.HTML ===================*/
+    
+    .main-pay {
+        width: 100%;
+        padding: 30px;
+        height: 100vh;
+    }
+    
+    .main-pay .titulo {
+        margin-bottom: 20px;
+    }
+    
+    .contenido-pay {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenido-pay .total {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        margin-top: 40px;
+    }
+    
+    .contenido-pay .total h2 {
+        background: #c2c2c2;
+        padding: 5px;
+        color: #fff;
+        margin-right: 3px;
+    }
+    
+    .contenido-pay .total p {
+        padding: 10px;
+        background: #c2c2c2;
+        color: #fff;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table thead th {
+        text-align: center;
+        padding: 10px;
+        background: #c2c2c2;
+        color: #fff;
+    }
+    
+    table tbody tr td {
+        text-align: center;
+    }
+    
+    table tbody tr td input {
+        width: 20%;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .buttons .btn_actualizar {
+        margin-right: 15px;
+    }
+    
+    .buttons .btn_actualizar .icon,
+    .buttons .btn_confirmar .icon,
+    .header-shop .btn_producto .icon {
+        padding: 10px;
+        background: #00EEFF;
+        color: #fff;
+        border-radius: 5px 0px 0px 5px;
+        margin-right: -2px;
+    }
+    
+    .buttons .btn_actualizar a,
+    .buttons .btn_confirmar a,
+    .header-shop .btn_producto a {
+        padding: 6.5px;
+        background: #707070;
+        border-radius: 0px 5px 5px 0px;
+        color: #fff;
+        text-decoration: none;
+    }
+    /* ========================================================= */
+    /*--------------------Estilos del footer-------------------------------------*/
+    
+    footer {
+        padding: 40px;
+        background: #221E22;
+    }
+    /* ==================== Media Querys ======================*/
+    
+    @media screen and (max-width:800px) {
+        .modal-acerca,
+        .modal-login {
+            width: 100%;
+            height: 100%;
+        }
+        .modal-acerca .content-modal,
+        .modal-login .content-modal {
+            width: 100%;
+            height: 100%;
+            margin: 60px 0px;
+        }
+        header {
+            padding: 0px;
+        }
+        .navegacion {
+            display: block;
+            background: rgba(34, 30, 34, .5);
+            width: 70%;
+            height: 100%;
+            position: fixed;
+            top: 6%;
+            left: -100%;
+            z-index: 9;
+        }
+        .navegacion .enlaces a {
+            width: 100%;
+            display: block;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+        }
+        .navegacion .btn_inicio {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .menu_bar {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            padding-left: 30px;
+            background: rgba(34, 30, 34, .5);
+            overflow: hidden;
+            position: fixed;
+            z-index: 9;
+        }
+        .menu_bar .btn_menu {
+            color: #fff;
+            text-decoration: none;
+        }
+        .contenido {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .contenido .formulario input[type="text"],
+        .contenido .formulario input[type="password"],
+        .contenido .formulario input[type="email"],
+        .contenido .formulario input[type="submit"] {
+            align-self: center;
+        }
+        .main .productos .producto:hover {
+            transform: none;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .main .productos .producto {
+            width: 45%;
+        }
+        footer .titulo {
+            width: 100%;
+        }
+        table thead th {
+            padding: 5px;
+            font-size: 15px;
+        }
+        table tbody tr td {
+            font-size: 15px;
+        }
+        table tbody tr td input {
+            width: 50%;
+            padding: 0px;
+        }
+        table tbody tr td input {
+            width: 50%;
+            padding: 0px;
+        }
+        .contenido-pay .total h2,
+        .contenido-pay .total p {
+            padding: 5px;
+            font-size: 15px;
+        }
+        .contenido-pay .total p {
+            margin-right: 20px;
+        }
+        .nav-shop {
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-shop .btn_producto {
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 50px;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        header .navegacion {
+            justify-content: center;
+        }
+        .contenido .formulario input[type="text"],
+        .contenido .formulario input[type="password"],
+        .contenido .formulario input[type="email"],
+        .contenido .formulario input[type="submit"] {
+            align-self: center;
+            width: 100%;
+        }
+        .main .productos .producto {
+            width: 100%;
+        }
+        .main-pay {
+            padding: 10px;
+        }
+        table thead th {
+            padding: 5px;
+            font-size: 10px;
+        }
+        table tbody tr td {
+            font-size: 10px;
+        }
+        table tbody tr td input {
+            width: 30%;
+            padding: 0px;
+        }
+        .contenido-pay .total h2,
+        .contenido-pay .total p {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .contenido-pay .total p {
+            margin-right: 20px;
+        }
+        .nav-shop {
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-shop .btn_cerrar,
+        .nav-shop .btn_producto {
+            margin-top: 10px;
+            font-size: 10px;
+        }
+        .buttons {
+            margin-top: 50px;
+            flex-direction: column;
+            font-size: 15px;
+            justify-content: center;
+        }
+        .buttons .btn_actualizar {
+            margin-bottom: 15px;
+            align-self: center;
+        }
+        .buttons .btn_confirmar {
+            align-self: center;
+            margin-right: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .main-pay {
+            padding: 10px;
+        }
+        table thead th {
+            padding: 5px;
+            font-size: 10px;
+        }
+        table tbody tr td {
+            font-size: 10px;
+        }
+        table tbody tr td input {
+            width: 30%;
+            padding: 0px;
+        }
+        .contenido-pay .total h2,
+        .contenido-pay .total p {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .contenido-pay .total p {
+            margin-right: 20px;
+        }
+        .nav-shop {
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-shop .btn_cerrar,
+        .nav-shop .btn_producto {
+            margin-top: 10px;
+            font-size: 10px;
+        }
+        .buttons {
+            margin-top: 50px;
+            flex-direction: column;
+            font-size: 15px;
+            justify-content: center;
+        }
+        .buttons .btn_actualizar {
+            margin-bottom: 15px;
+            align-self: center;
+        }
+        .buttons .btn_confirmar {
+            align-self: center;
+            margin-right: 15px;
+        }
+    }

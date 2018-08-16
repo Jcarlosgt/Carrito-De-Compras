@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="modal-acerca" id="modal-acerca">
+        <div class="content-modal">
+            <div onclick="hiddeModal(document.getElementById('modal-acerca'))" class="cerrar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="titulo">
+                <h1>GAMER SHOP
+                    <i class="fas fa-gamepad"></i>
+                </h1>
+            </div>
+            <div class="texto">
+                <p>
+                    En GameCenter somos una empresa dedicada completamente a la distribucion de equipo gamer adecuado a las necesidades que nuestros Clientes tengan y contamos tambien con asesoramiento personal todo con el fin de lograr la mejor experiencia de nuestros clientes
+                    al momento de comprar su equipo.
+                </p>
+                </br>
+                <p>Esta empresa fue desarrollada por Carlos Juárez 0900-15-1372 y Julio Romero Pellecer 0900-15-547.</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu_bar">
+            <a onclick="btnMenu()" href="#" class="btn_menu" id="btn_menu"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="contenedor">
+            <nav class="navegacion" id="navegacion">
+                <div class="enlaces">
+                    <a href="index.html">Inicio</a>
+                    <a onclick="showModal(document.getElementById('modal-acerca'))" href="#" id="btn-acerca">Acerca de </a>
+                    <a href="#productos">Productos</a>
+                </div>
+                <div class="btn_inicio">
+                    <i class="icon far fa-user"></i><a id="btn-init" href="store.html">Iniciar</a>
+                </div>
+            </nav>
+            <div class="contenido">
+                <div class="titulo">
+                    <h1>GAMER SHOP
+                        <i class="fas fa-gamepad"></i>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main" id="productos">
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>Productos
+                    <i class="fas fa-parachute-box"></i>
+                </h1>
+            </div>
+            <div class="productos">
+                <!--Inicia producto 1  -->
+                <div class="producto" id="drag" draggable="true">
+                    <div class="img">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming InWin 301 Black </h5>
+                        <h4>Q.759.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class="btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class="btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 2  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming InWin 301 White </h5>
+                        <h4>Q.759.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 3  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/3.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming NZXT S340 Media Torre </h5>
+                        <h4>Q.815.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 4  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming NZXT Noctis 450 Mediano </h5>
+                        <h4>Q.1,235.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 5  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/5.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming NZXT Phantom 240 </h5>
+                        <h4>Q.799.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 6  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/6.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming NZXT Noctis 450 Mediana</h5>
+                        <h4>Q.1,235.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 7  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/7.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming NZXT Noctis 450 Black</h5>
+                        <h4>Q.1,200.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 8  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/8.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming Corsair Crystal Series</h5>
+                        <h4>Q.1,245.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+                <!--Inicia producto 9  -->
+                <div class="producto">
+                    <div class="img">
+                        <img src="img/9.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>Case Gaming Corsari Carbide Yellow</h5>
+                        <h4>Q.901.00</h4>
+                    </div>
+                    <div class="button">
+                        <div class="menos">
+                            <button class=" btn-d far fa-arrow-alt-circle-down"></button>
+                            <input type="text" class="num-d" readonly value="0">
+                        </div>
+                        <div class="mas">
+                            <button class=" btn-l far fa-arrow-alt-circle-up"></button>
+                            <input type="text" class="num-l" readonly value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>GAMER SHOP
+                    <i class="fas fa-gamepad"></i>
+                </h1>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu-modals.js"></script>
+</body>
+
+</html>
